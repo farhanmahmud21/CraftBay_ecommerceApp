@@ -1,6 +1,7 @@
 import 'package:e_commerce/presentation/ui/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class Splashsceen extends StatefulWidget {
   const Splashsceen({super.key});
@@ -17,9 +18,7 @@ class _SplashsceenState extends State<Splashsceen> {
 
   void goToHomeScreen() {
     Future.delayed(Duration(seconds: 2)).then((_) async {
-      Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return HomeScreen();
-      }));
+      Get.offAll(HomeScreen());
     });
   }
 
