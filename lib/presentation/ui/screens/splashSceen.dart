@@ -18,7 +18,7 @@ class _SplashsceenState extends State<Splashsceen> {
   }
 
   void goToHomeScreen() {
-    Future.delayed(Duration(seconds: 2)).then((_) async {
+    Future.delayed(Duration(seconds: 5)).then((_) async {
       Get.offAll(EmailVerificationScreen());
     });
   }
